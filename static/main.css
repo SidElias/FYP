@@ -5,7 +5,22 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    background-color: #030017; /* Darker background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
 }
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #465675;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -22,7 +37,7 @@ code {
 }
 
 .App-header {
-    background-color: #282c34;
+    background-color: #465675;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,10 +51,43 @@ code {
     color: #61dafb;
 }
 
-.heart {
-    color: #ff0000;
-}
-
 .small {
     font-size: 0.75rem;
+}
+
+input[type="text"] {
+    width: 80%; /* Adjust as needed */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: auto; /* Center the input box */
+    margin-right: auto; /* Center the input box */
+    border: 1px solid #0d0213;
+    border-radius: 5px;
+    display: block; /* Make the input box a block element */
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #0c0101;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#qrcode {
+    text-align: center;
+}
+
+#feedback {
+    text-align: center;
+    margin-top: 10px;
 }
